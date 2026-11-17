@@ -1,85 +1,554 @@
-# MindCapsule 抱抱小刺猬
+# 🦔 MindCapsule — Hug the Hedgehog
 
-**校园情绪支持产品的公开展示 · Designed by ZHANG ZHELIN**
+### An Emotional Support Companion for Adolescents
 
-给初中生和高中生一个可以短暂停留、自然离开的空间。MindCapsule 以小刺猬、日常语言和轻量互动，探索公共触摸屏上的一般情绪支持。
+**抱抱小刺猬 · 青少年情绪胶囊**
 
-本仓库展示现有项目的界面效果、设计思路与研究参考。**核心业务源码、人工安慰语句库和可安装软件不在此公开。这里是静态作品展示，不能启动聊天或运行小游戏。**
+**Designed by a student, for students.**
 
-![MindCapsule 校园首页](screenshots/home.png)
+*Exploring human-centered computing, emotional expression, psychology-informed interaction, and privacy-conscious educational technology.*
 
-## 设计目标
+**A little space for every feeling.**
 
-- 不要求学生登录，让公共设备上的一次使用保持轻量。
-- 聊天、笑话、天气小窗、暖心卡与小游戏提供不同的进入方式。
-- 校园模式提供明显的结束按钮、Esc 清场与默认三分钟无操作清场。
-- 不在公共设备提供个人聊天档案、小记保存或聊天导出。
-- 保留人工创作的语气，同时明确规则式回应和现实求助的边界。
+English | 中文版（准备中）
 
-现有聊天使用本地规则与有限话题上下文，不是云端大语言模型。产品不承担心理诊断、治疗、危机筛查或自动救援功能。没有真人实时值守，也不代表已经完成学校现场或临床效果验证。
+[Project Demo](https://youtu.be/PUI62vXR5Xo) · [Original Project](https://github.com/prodigylinda/MindCapsule_Hugging-the-Hedgehog-previous) · [Developer](https://github.com/prodigylinda)
 
-## 四个小游戏
+---
 
-### 流光轨道
+## Introduction
 
-按自己的节奏点亮六盏灯，可选节奏提示、随时停止。不计速度分，不输出情绪或能力评价。
+### MindCapsule — Hug the Hedgehog is an independent, student-led software project designed to make everyday emotional expression more approachable for middle school and high school students.
 
-![流光轨道界面](screenshots/orbit.png)
+![MindCapsule Home Screen](screenshots/home.png)
 
-### 书包减负
+### The project was inspired by a simple problem observed in secondary education: students may experience academic pressure, frustration, social comparison, and self-doubt, yet hesitate to discuss these feelings openly.
 
-把预设的日常事项放入“现在能做一点”“可以找人一起”“暂时不必解决”三个口袋，支持撤回。不要求输入私人经历。
+MindCapsule explores how digital interaction can provide an additional, low-pressure space for reflection and general emotional support.
 
-![书包减负界面](screenshots/bag.png)
+What began as a lightweight Python desktop application with a collection of human-written comforting messages has gradually developed into a multi-platform system featuring conversational support, everyday companion tools, interactive activities, and a dedicated campus touchscreen interface.
 
-### 窗边拼图
+The long-term vision is to make MindCapsule suitable for responsible deployment in educational environments.
 
-通过点击旋转拼块还原窗景，没有倒计时或失败惩罚，可以使用提示或直接离开。
+**MindCapsule is not a diagnostic, therapeutic, or emergency response system. It is designed to complement, not replace, human care and professional support.**
 
-![窗边拼图界面](screenshots/puzzle.png)
+## Demonstration
 
-### 换个镜头
+### Project Video
+This is the original video which was made when I began this project
+a previous results shows.
+▶ [Watch MindCapsule on YouTube](https://youtu.be/PUI62vXR5Xo)
 
-浏览四段原创校园片段，尝试不同解释角度。没有唯一正确答案，不生成心理测评结果。
+*This video documents an earlier version of the project. Additional demonstrations of the campus application will be published as development progresses.*
 
-![换个镜头界面](screenshots/lens.png)
+### Application Gallery
 
-## 三个版本的当前阶段
+Screenshots of the latest application will be added here after review.
 
-| 版本 | 私有开发项目的现状 | 此公开仓库提供什么 |
+Suggested gallery:
+
+- Welcome screen
+- Emotional conversation interface
+- Interactive activities
+- Windows campus touchscreen mode
+- Personal desktop application
+
+---
+
+## Recent Updates
+
+### November 2026 — Campus Mode Development
+
+The project has expanded beyond the original Tkinter application to include browser-based interfaces and a Windows touchscreen experience.
+
+Recent development milestones include:
+
+- A shared web application for browser-based and campus interaction
+- A Windows Edge fullscreen kiosk launcher
+- A browser-installable Android PWA
+- Four interactive mini-games
+- Session-ending controls for shared devices
+- Automatic session clearing after a configurable period of inactivity
+- Separation of the personal desktop journal from the shared campus experience
+- Automated testing for selected session-isolation and regression scenarios
+- Preservation of the original human-written comforting-message files
+
+### Current Limitations
+
+The project remains a campus pilot prototype.
+
+A distributable Windows installer and a native Android APK have not yet been confirmed as completed releases.
+
+Multi-school administration, centralized analytics, device registration, and controlled software updates are future development goals.
+
+Real-world campus deployment will also require device testing, professional content review, institutional approval, and appropriate privacy safeguards.
+
+---
+
+## Features Implemented
+
+### Emotional Interaction
+
+- Text-based conversation
+- Local rule-based response generation
+- Limited conversational context
+- Academic stress and self-doubt response scenarios
+- Supportive responses for selected everyday emotional concerns
+- User-selectable interaction approaches
+- Human-written comforting messages
+- General safety-related guidance and human-support references
+
+### Daily Companion Features
+
+- Lighthearted offline jokes
+- Weather lookup with user-controlled network access
+- Simple relaxation prompts
+- Environmental observation activities
+- Small, manageable action-planning interactions
+
+### Interactive Activities
+
+- #### Flowing Light Trail — 流光轨道
+- ![Flowing Light Trail - Mini Game](screenshots/orbit.png)
+- #### Lighten the Backpack — 书包减负
+- ![Lighten the Backpack - Mini Game](screenshots/bag.png)
+- #### Window Puzzle — 窗边拼图
+- ![Window Puzzle - Mini Game](screenshots/puzzle.png)
+- #### A Different Perspective — 换个镜头
+- ![A Different Perspective - Mini Game](screenshots/lens.png)
+  This games is designed by AI&me,if there are things which is not suitable, please contact me through:zhangzhelin2010@gmail.com and tell me your advice.
+
+### Campus Experience
+
+- Touchscreen-oriented layout
+- Large, accessible interaction controls
+- Windows fullscreen launch
+- No mandatory student login in the shared campus interface
+- Manual session clearing
+- Configurable inactivity timeout
+- Separation between personal and shared-device storage behavior
+- Browser-based offline resources where supported
+
+### Personal Desktop Experience
+
+- Python Tkinter interface
+- Optional local mood journal
+- User-controlled conversation export
+- Local SQLite storage for explicitly saved journal entries
+- Separate desktop conversation engine
+
+---
+
+## Supported Platforms
+
+| Platform | Technology | Current Availability |
 |---|---|---|
-| 浏览器版 | 已有可运行的校园界面与功能 | 界面截图、设计报告 |
-| Windows 校园版 | 已构建 v0.9.0-beta 试点安装包；干净设备、卸载重装及升级仍待完整验收 | 产品介绍，不含安装包或启动脚本 |
-| Android 版 | PWA 形态，尚非原生 APK | 设计说明，不含应用源码或 APK |
+| Python Desktop | Python 3.10+, Tkinter, SQLite | Runnable desktop prototype |
+| Web | HTML, CSS, JavaScript | Runnable local web application |
+| Windows Campus | Local Python service + Microsoft Edge | Runnable fullscreen campus prototype |
+| Android | Progressive Web App | Browser-installable after suitable HTTPS deployment |
 
-截图来自既有设计报告中的功能演示环境，展示预设界面，不是学生真实聊天记录或学校实地部署证明。截图不代表每个平台均完成实体设备验收。
+All platforms are currently undergoing ongoing development and testing.
 
-## 设计报告
+The web, Windows campus, and Android PWA interfaces share browser-based application resources. The original Tkinter desktop application remains a separate implementation.
 
-原报告按原字节复制，署名 **ZHANG ZHELIN**。报告中标注的“模拟设计日期”保留原样，不应当作实际研究或开发完成时间。校园自述为虚构复合场景，研究参考不等于本产品效果已经被证实。
+---
 
-| 报告 | 阅读版 | 可编辑版 |
-|---|---|---|
-| 项目整体设计 | [PDF](design-reports/project/MindCapsule-Project-Design.pdf) | [Word](design-reports/project/MindCapsule-Project-Design.docx) |
-| 流光轨道 | [PDF](design-reports/games/Orbit-Design.pdf) | [Word](design-reports/games/Orbit-Design.docx) |
-| 书包减负 | [PDF](design-reports/games/Bag-Design.pdf) | [Word](design-reports/games/Bag-Design.docx) |
-| 窗边拼图 | [PDF](design-reports/games/Window-Puzzle-Design.pdf) | [Word](design-reports/games/Window-Puzzle-Design.docx) |
-| 换个镜头 | [PDF](design-reports/games/Perspective-Design.pdf) | [Word](design-reports/games/Perspective-Design.docx) |
+## Four Interactive Mini-Games
 
-研究背景与局限见 [研究线索与设计边界](research/RESEARCH.md)。报告保留公开层面的交互与架构说明，具体运行能力以当前版本说明及实际验收为准。
+MindCapsule includes four activities designed to make the application more approachable and interactive for adolescent users.
 
-## 公开展示内容
+The games explore different forms of engagement, reflection, and interaction without presenting themselves as clinical interventions.
 
-| 目录 | 内容 |
-|---|---|
-| screenshots | 首页和四个小游戏的原始界面截图 |
-| design-reports/project | 整体项目设计报告，PDF 与 Word |
-| design-reports/games | 四个小游戏设计报告，PDF 与 Word |
-| research | 原有研究参考说明 |
-| assets/icons | 项目图标 PNG 素材 |
+### 1. Flowing Light Trail — 流光轨道
 
-本目录未包含 Python、JavaScript、HTML/CSS 应用文件、构建与启动脚本、安慰语句数据、学校/设备配置、聊天记录、数据库、日志、安装包、Git 历史或开发环境。网页视觉通过静态截图展示，无需运行核心程序。
+An interactive activity exploring focused engagement and simple visual interaction.
 
-天气功能在私有软件中需单独同意后请求外部服务；清除本地会话不表示第三方服务数据已删除。后续多学校部署、管理后台和匿名统计属于长期规划，不应描述为已交付能力。
+The intended design direction is to create an approachable activity that does not require students to discuss their emotions directly.
 
-© 2026 ZHANG ZHELIN · MindCapsule
+### 2. Lighten the Backpack — 书包减负
+
+A school-themed activity using the metaphor of a backpack to explore everyday burdens and the experience of managing pressure.
+
+The interaction connects the game's visual theme to familiar student experiences.
+
+### 3. Window Puzzle — 窗边拼图
+
+A puzzle-based activity centered on visual interaction, manageable tasks, and short periods of focused engagement.
+
+### 4. A Different Perspective — 换个镜头
+
+An interactive activity exploring the idea that a situation can sometimes be considered from more than one perspective.
+
+It reflects the project's broader interest in flexible thinking and non-judgmental self-reflection.
+
+### Game Design Documentation
+
+Each activity is accompanied by design documentation covering its intended purpose, interaction structure, implementation, and psychological rationale.
+
+The games have not been established as clinically effective treatments. Their usability and potential benefits require further evaluation.
+
+---
+
+## Design Motivation
+
+### Academic Pressure
+
+Secondary education can involve intensive examinations, increasing subject complexity, and pressure to meet academic expectations.
+
+A difficult problem may lead a student to question not only their understanding of the subject but also their personal ability.
+
+### Social Comparison
+
+Students may interpret a difference in learning speed as evidence of personal inadequacy.
+
+For example, a student who struggles with spatial geometry while classmates appear confident may begin to think:
+
+> Everyone else understands this. Why can't I?
+
+This hypothetical situation illustrates one of the project's original design concerns: the relationship between academic difficulty, social comparison, and self-doubt.
+
+### Emotional Expression
+
+Some students may hesitate to share feelings of frustration, embarrassment, or anxiety because they fear negative judgments.
+
+MindCapsule investigates whether a simple digital interface can offer an additional opportunity for expression and reflection.
+
+### Why a Hedgehog?
+
+The hedgehog symbolizes sensitivity, boundaries, and self-protection.
+
+Its protective spines represent the difficulty of approaching others while feeling vulnerable.
+
+In this project, the hedgehog communicates a simple principle:
+
+**Emotional support should be available without pressure or judgment.**
+
+---
+
+## Technical Architecture
+
+### Current System
+
+The application currently uses local rule-based conversational mechanisms rather than remote large language model inference.
+
+Its core interaction process is:
+
+User Input → Text Processing → Rule-Based Interpretation → Response Selection → Interface Feedback
+
+### Desktop Application
+
+The original desktop architecture includes:
+
+- `main.py` — Tkinter user interface
+- `companion.py` — conversational logic and supportive responses
+- `journal.py` — optional SQLite mood journal
+- `weather_service.py` — weather-related requests
+- `DATa.py` — original human-written comforting messages
+- `tests/` — automated desktop tests
+
+### Campus Application
+
+The browser-based campus application includes:
+
+- `index.html` — main application interface
+- `app.js` — interaction flow and session management
+- `engine.js` — browser-side conversational logic
+- `games.js` — interactive activities
+- `styles.css` and `games.css` — interface styling
+- `sw.js` — service-worker resource handling
+- `manifest.webmanifest` — PWA metadata
+- `server.py` — local web service and configuration validation
+
+The campus application also includes Windows launch scripts, deployment configuration, tests, and design documentation.
+
+### Architecture Boundaries
+
+The present campus interface primarily processes conversation content locally.
+
+The personal desktop application allows explicitly requested journal storage and exports, while the shared campus experience is designed around temporary sessions.
+
+Weather requests may communicate with external services following user-controlled access.
+
+Server-hosted deployments, operating systems, browsers, and external services require independent privacy assessment before real-world use.
+
+---
+
+## Software and Installation
+
+### Python Desktop
+
+Requirements:
+
+- Python 3.10 or later
+- Tkinter support
+
+Run from the project root:
+
+```bash
+python main.py
+```
+
+Run desktop tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+On Windows, the original application can also be started with `start.bat`.
+
+### Windows Campus Mode
+
+The current prototype is launched using:
+
+```text
+campus/start-windows-kiosk.bat
+```
+
+The launcher starts the local service and opens the campus interface in Microsoft Edge fullscreen mode.
+
+**Current requirements:**
+
+- Windows
+- Python 3.10 or later
+- Microsoft Edge
+- The complete campus application directory
+
+The current prototype is not yet a standalone installer.
+
+### Web Application
+
+From the `campus` directory:
+
+```bash
+python server.py
+```
+
+The local application is served at:
+
+```text
+http://127.0.0.1:8765/
+```
+
+The project also contains static deployment examples using Nginx and Docker.
+
+Production hosting requires additional configuration, HTTPS, and deployment review.
+
+### Android PWA
+
+The Android version currently uses Progressive Web App technology.
+
+Once the application is hosted on a suitable HTTPS endpoint, compatible Android browsers can offer installation to the home screen.
+
+A native Android APK is not part of the currently verified release artifacts.
+
+### School Deployment
+
+The campus application is currently intended for controlled demonstrations and technical evaluation.
+
+It should not be presented as a fully validated school mental health service.
+
+---
+
+## Privacy and Responsible Design
+
+Privacy is a central design objective of MindCapsule.
+
+### Conversation Data
+
+The campus application is designed to keep conversational context temporary and clear the current session when the user finishes.
+
+### Shared-Device Protection
+
+The Windows campus interface includes:
+
+- A visible session-ending action
+- Manual session clearing
+- Automatic inactivity clearing
+- Separation of consecutive sessions
+- Clearing of relevant temporary interaction state
+
+Actual shared-device deployment still requires verification of keyboard behavior, operating-system recovery, browser configuration, and physical access controls.
+
+### Personal Desktop Storage
+
+The personal desktop application differs from the campus interface.
+
+It supports:
+
+- Explicitly saved local mood-journal entries
+- Optional conversation export
+- Local SQLite storage
+
+These files are not automatically encrypted and should be protected appropriately.
+
+### Operational Analytics
+
+Centralized school analytics have not yet been implemented.
+
+The proposed future analytics system would focus on aggregate operational information rather than private conversations or inferred psychological states.
+
+### Responsible Use
+
+MindCapsule does not:
+
+- Provide clinical diagnosis
+- Claim to measure psychological health accurately
+- Replace licensed mental health professionals
+- Automatically contact emergency services
+- Guarantee detection of every crisis-related message
+- Demonstrate clinical effectiveness
+
+Students experiencing serious or persistent difficulties should seek appropriate assistance from trusted adults and qualified professionals.
+
+---
+
+## Development Documentation
+
+The project includes design and development materials such as:
+
+- Project design report
+- Development process report
+- Four individual game-design reports
+- Campus deployment planning
+- Implementation and testing records
+
+Selected public documentation will be linked after review.
+
+**Original demonstration:** [YouTube](https://youtu.be/PUI62vXR5Xo)
+
+**Original development history:** [MindCapsule Previous Version](https://github.com/prodigylinda/MindCapsule_Hugging-the-Hedgehog-previous)
+
+---
+
+## Development Roadmap
+
+### Completed Prototype Milestones
+
+- [x] Original comforting-message application
+- [x] Python desktop interface
+- [x] Rule-based continuous conversation
+- [x] Optional mood journal
+- [x] Everyday companion tools
+- [x] Browser-based campus interface
+- [x] Windows fullscreen launcher
+- [x] Android PWA structure
+- [x] Four interactive mini-games
+- [x] Campus session-clearing implementation
+- [x] Initial technical and design documentation
+
+### Under Development or Pending Verification
+
+- [ ] Reproducible Windows installation package
+- [ ] Native Android APK evaluation
+- [ ] Real touchscreen hardware acceptance testing
+- [ ] Professional review of psychological content
+- [ ] Privacy and security review
+- [ ] Student usability evaluation
+- [ ] Verified school pilot deployment
+
+### Long-Term Development Goals
+
+- [ ] School and device management
+- [ ] Privacy-conscious aggregate usage statistics
+- [ ] Authorized administration dashboard
+- [ ] Controlled software updates and rollback
+- [ ] Multi-school configuration and maintenance
+- [ ] Broader educational partnerships
+
+These are planned milestones, not claims of completed functionality or established school adoption.
+
+---
+
+## Project History
+
+MindCapsule began with a human-written collection of comforting messages and a lightweight Python implementation.
+
+The early version focused on recognizing selected emotional expressions through text and responding with prepared supportive language.
+
+Later development introduced:
+
+- More structured interaction logic
+- Continuous conversations
+- Additional daily companion features
+- Optional personal journaling
+- Cross-platform campus interfaces
+- Interactive activities
+- Stronger shared-device session controls
+- More systematic testing and documentation
+
+The original version remains available as a record of the project's early development.
+
+[Explore the Original Version](https://github.com/prodigylinda/MindCapsule_Hugging-the-Hedgehog-previous)
+
+---
+
+## Research and References
+
+MindCapsule draws general design inspiration from research and educational discussions concerning adolescent well-being, emotional expression, coping, and human-computer interaction.
+
+Relevant resources include:
+
+- [World Health Organization — Mental Health of Adolescents](https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health)
+- [UNICEF — Mental Health](https://www.unicef.org/mental-health)
+- [Open-Meteo API Documentation](https://open-meteo.com/en/docs)
+
+These references provide background context. They do not imply endorsement or validate the effectiveness of the application.
+
+The research rationale for individual activities requires further review against relevant primary literature.
+
+---
+
+## About the Project
+
+MindCapsule is an independent student-led project motivated by the desire to apply computing to a familiar problem in secondary education.
+
+It represents an ongoing exploration of:
+
+- Software engineering
+- Human-computer interaction
+- Psychology-informed product design
+- Privacy-conscious computing
+- Cross-platform application development
+- Educational technology
+- Responsible AI-assisted development
+
+AI coding tools have assisted portions of implementation, debugging, documentation, and testing.
+
+The project's original motivation, conceptual direction, and preserved human-written content remain important elements of its development history.
+
+## Source Code and Intellectual Property
+
+The main application source code is maintained in a private development repository.
+
+This public repository is intended for project presentation, selected documentation, demonstrations, and development updates.
+
+The original historical repository is maintained separately.
+
+Public availability of project materials does not itself grant permission to reproduce or commercially exploit proprietary content beyond applicable law and any expressly granted licenses.
+
+Third-party components and assets remain subject to their respective license terms.
+
+## Collaboration
+
+MindCapsule welcomes interest and feedback from educators, school technology administrators, researchers, and professionals working in adolescent well-being.
+
+Potential areas for future collaboration include:
+
+- User experience evaluation
+- Psychological content review
+- Campus touchscreen testing
+- Privacy and accessibility review
+- Educational deployment research
+- Software reliability and maintenance
+
+Please use the developer's GitHub profile to initiate contact.
+
+**Developer:** [prodigylinda](https://github.com/prodigylinda)
+
+---
+
+**MindCapsule — Hug the Hedgehog**
+
+*Technology with empathy. Designed for students, with students in mind.*
+Created by zhangzhelin
