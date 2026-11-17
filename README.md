@@ -41,6 +41,21 @@ a previous results shows.
 
 *This video documents an earlier version of the project. Additional demonstrations of the campus application will be published as development progresses.*
 
+
+## 🦔 Bring MindCapsule to Your School
+
+**What if every school had a little space where students could express their feelings without fear of judgment?**
+
+MindCapsule is more than a student programming project. My long-term goal is to turn it into an accessible, privacy-conscious emotional support platform that can be used in middle schools and high schools.
+
+The project is currently preparing for supervised campus pilot testing, and I welcome opportunities to collaborate with educators, school administrators, researchers, and mental health professionals.
+
+**Interested in trying MindCapsule, evaluating the software, or exploring a potential school pilot?**
+
+📩 **Contact: [zhangzhelin2010@gmail.com](mailto:zhangzhelin2010@gmail.com)**
+I would be happy to discuss demonstrations, technical evaluation, potential school deployments, and ideas for improvement.
+
+
 ### Application Gallery
 
 Screenshots of the latest application will be added here after review.
