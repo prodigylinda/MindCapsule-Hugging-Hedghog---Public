@@ -42,7 +42,7 @@ a previous results shows.
 *This video documents an earlier version of the project. Additional demonstrations of the campus application will be published as development progresses.*
 
 
-## 🦔 Bring MindCapsule to Your School
+### 🦔 Bring MindCapsule to Your School
 
 **What if every school had a little space where students could express their feelings without fear of judgment?**
 
